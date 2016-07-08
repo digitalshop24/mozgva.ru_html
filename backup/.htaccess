@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.mozgva\.ru$ [NC]
+RewriteRule ^(.*)$ http://mozgva.ru/$1 [R=301,L]

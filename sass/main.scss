@@ -1,0 +1,463 @@
+@import url('../fonts/stylesheet.css');
+$red: #DF2929;
+$yellow: #FFBB44;
+body {
+	font-weight: normal;
+	font-size: 14px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialised;
+	overflow-x: hidden;
+	height: 100%;
+  font-family: "graublausans-reguuploadedfile";
+	//overflow: hidden;
+  background-color: $red;
+} 
+
+p {
+  font-size: 1.7rem;
+}
+a, a:hover, a:focus {
+  	text-decoration: none; 
+  	color: #fff;
+  	outline: none; }
+ul { 
+  	list-style-type: none;
+  	padding: 0; }
+h1 {
+  	font-size: 6rem;
+  	font-family: "graublauslab-bolduploadedfile";
+  	 }
+h2 {
+	font-size: 4.5rem; 
+    //	font-family: "RobotoSlabBold", sans-serif;
+}
+h3 {
+  	font-size: 3rem; 
+    //	font-family: "RobotoSlabBold", sans-serif;
+  }
+h4 {
+  	font-size: 2.5rem; }
+h5 {
+  	font-size: 1.7rem; }
+h6 {
+  	font-size: 1.4rem; }
+
+p,h1,h2,h3,h4,h5,h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.white_btn {
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+  background: #ffffff;
+  color: #df2929;
+  display: block;
+  float: none;
+  font-size: 30px;
+  line-height: 53px;
+  margin: 30px auto 0;
+  padding: 0 25px;
+  text-decoration: none;
+  width: 220px;
+  font-family: "graublauslab-bolduploadedfile";
+  border: none;
+  margin-bottom: 20px
+}
+.white_btn:hover {
+  color: $red;
+}
+.red_btn {
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  border-radius: 45px;
+  background: $red;
+  color: #fff;
+  display: block;
+  float: none;
+  font-size: 30px;
+  line-height: 53px;
+  margin: 30px auto 0;
+  padding: 0 25px;
+  text-decoration: none;
+  // width: 220px;
+  font-family: "graublauslab-bolduploadedfile";
+  border: none;
+  margin-bottom: 20px
+}
+.red_btn:hover {
+  color: #fff;
+}
+
+.first_screen {
+  background-color: $red;
+  color: #fff;
+  min-height: 100vh;
+  .line_1 {
+    h3 {
+        padding: 20px;
+        
+      }
+    .left {
+      span {
+        font-size: 1.4rem;
+      }
+      a {
+        background: url(../images/location.png) no-repeat left top;
+        display: block;
+        padding-left: 40px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+    }
+    .center {
+      img {
+        padding: 20px 0;
+      }
+    }
+    .right {
+      span {
+        color: $yellow;
+      }
+      h3 {
+        font-family: "graublauslab-bolduploadedfile";
+      }
+    }
+  }
+  .line_2 {
+    .left {
+      .like2 {
+        // display: flex;
+        // flex-direction: row;
+        // align-items: flex-end;
+      }
+    }
+    .center {
+      .wrapper {
+        border: 15px solid #fff;
+      }
+      .btn_reit {
+          font-size: 40px ;
+          font-family: "graublauslab-bolduploadedfile" ;
+          background-size: cover ;
+          border-radius: 100px ;
+          border: none;
+          background-image: url("../img/btn-rating.png") ;
+          width: 340px;
+          cursor: pointer;
+          position: relative;
+          margin: 0px auto ;
+          color: #000 ;
+          border: none;
+          margin-top: 20px; 
+      }
+    }
+    .right {
+      .town {
+          font-size: 14px;
+          margin-top: 20px;
+          a:hover {
+            color: #ffbb44 !important;
+          }
+          .menu_town {
+            display: none;
+            p {
+              margin-top: -10px;
+            }
+          }
+          .check_town:hover +.menu_town, .check_town:hover, .menu_town:hover {
+            display: block;
+          }
+          
+        }
+      }
+  }  
+  .line_3 {
+    padding-top: 20px;
+  }
+}    
+
+.present {
+  background-color: $yellow;
+  padding: 70px 0;
+  .3x {
+    p {
+      padding: 20px 0 0 0;
+    }
+  }
+  .left {
+    img {
+      margin: 0 auto;
+    }
+  }
+  .right {
+    h2 {
+      color: $red;
+      font-size: 7rem;
+      font-family: "graublauslab-bolduploadedfile";
+    }
+    h3 {
+      color: $red;
+      font-style: italic;
+      padding: 0;
+      margin: 0;
+
+    }
+    
+  }
+}
+.bar {
+  background-color: $yellow;
+  padding: 70px 0;
+  color: #000;
+  background: url(../images/a.png) no-repeat right -60px top 550px #ffbb44;
+  .bar_container {
+    padding-top: 150px;
+
+  }
+  h2 {
+    color: $red;
+    font-family: "graublauslab-bolduploadedfile";
+    font-size: 7rem;
+    line-height: .75;
+    padding: 20px 0;
+  }
+  h3 {
+    color: #000;
+    font-family: "graublauslab-bolduploadedfile";
+    font-size: 4rem;
+    padding: 20px 0;
+  }
+  .tilda {
+    position: absolute;
+    left: 6%;
+    margin-top: 140px;
+  }
+}
+
+.intelect {
+  background-color: #A21EFF;
+  padding: 70px 0;
+  color: #fff;
+  h2 {
+    color: #fff;
+    font-family: "graublauslab-bolduploadedfile";
+    font-size: 10rem;
+    line-height: .75;
+  }
+  .left {
+    float: left;
+    
+    font-family: "graublauslab-bolduploadedfile";
+    p {
+      font-size: 10rem;
+      width:10%;
+    }
+  }
+  .right {
+    float: right;
+    width:85%;
+    padding: 25px 0 0 50px;
+  }
+  .smile {
+
+  }
+  .owl-controls {
+    position: absolute;
+    top: -25px;
+    left: 0;
+  }
+  .owl-pagination .active {
+    background-color: $red !important;
+  }
+  .owl-pagination .owl-page {
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 16px;
+    margin-right: 12px;
+    width: 17px;
+  }
+  .carousel {
+    background: #ffbb44;
+    border: 15px solid #ffffff;
+    color: #000000;
+    
+    padding: 50px 40px 40px 50px;
+    .title {
+      font-family: "graublauslab-bolduploadedfile";
+      font-size: 36px;
+      padding-bottom: 20px;
+      line-height: 1.2;
+      span {
+        color: #df2929;
+      }
+
+    } 
+    .answer {
+      margin-top: 80px;
+      color: #df2929;
+    }
+    .reflection {
+      transform: scale(-1, -1);
+    }
+  }
+}
+.bar_2 {
+  background-color: #FF534F;
+  color: #fff;
+  background: url(../images/amp.png) no-repeat -50px -70px #ff534f;
+  min-height: 522px;
+  padding-top: 50px;
+  h2 {
+    color: #fff;
+    font-family: "graublauslab-bolduploadedfile";
+    font-size: 13rem;
+  }
+}
+
+.olympiada_2 {
+  clear: both;
+  background: url(../images/olymp-bg.png) no-repeat right -20px top 35px #4f53ff;
+  color: #ffffff;
+  min-height: 825px;
+  padding-top: 70px;
+  h2 {
+    color: #fff;
+    font-family: "graublauslab-bolduploadedfile";
+    font-size: 13rem;
+    line-height: .75;
+  }
+  p {
+    padding-top: 20px;
+  }
+  .info {
+    padding-top: 130px;
+  }
+  .colv {
+    width: 100px;
+    height: 70px;
+    float: left;
+    color: #FFBB44;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    text-shadow: -1px -1px 0 #FFBB44,1px -1px 0 #FFBB44,-1px 1px 0 #FFBB44,1px 1px 0 #FFBB44;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .texts {
+    width: 180px;
+    height: 70px;
+    float: left;
+    padding-top: 20px;
+  }
+  span {
+      float: left;
+      color: #FFBB44;
+      font-size: 26px;
+      line-height: 28px;
+      font-weight: 700;
+      text-shadow: -0.5px -0.5px 0 #FFBB44,0px -0px 0 #FFBB44,-0.5px 0.5px 0 #FFBB44,0px 0px 0 #FFBB44;
+      text-align: right;
+      float: right;
+      padding-right: 15px;
+      margin-top: -8px;
+  }
+}
+
+footer {
+  background: #000000;
+  color: #ffffff;
+  min-height: 120px;
+  ul {
+    padding: 20px 0;
+    li {
+      font-size: 2rem;
+    }
+  }
+  #soc {
+    padding-top: 50px;
+  }
+}
+
+.send {
+  background-color: #fff;
+  min-height: 100vh;
+  img {
+    padding: 25px;
+  }
+  h2 {
+    font-family: "graublauslab-bolduploadedfile";
+    font-size: 10rem;
+    line-height: .75;
+    color: $red;
+  }
+  input[type="text"] {
+    border: 5px solid #000000;
+    color: #000000;
+    font-family: graublausans-reguuploadedfile;
+    font-size: 18px;
+    height: 60px;
+    margin-top: 14px;
+    padding: 0;
+    text-align: center;
+    width: 370px;
+    
+   
+  }
+
+}
+
+
+@media only screen and (max-width : 992px) { 
+  .line_2 {
+    .right {
+      #soc {
+        text-align: center;
+        padding-top: 20px;
+      }
+    }
+  }
+  .intelect {
+    h2 {
+      text-align: center;
+    }
+  }
+  .bar,.bar_2,.olympiada_2 {
+    background-image: url('none.png');
+  }
+  .olympiada_2 .info {
+    padding-top: 30px;
+
+  }
+
+}
+.thx {
+  background-color: #fff;
+  height: 100vh;
+  h3 {
+    font-size: 9rem;
+    line-height: .80;
+    padding: 200px 0 50px 0;
+
+  }
+}
+
+@media only screen and (max-width : 992px) { 
+    .send {
+      input[type="text"] {
+        display: block;
+        margin: 10px auto;
+
+      }
+    }
+}
+
+
+
+

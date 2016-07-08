@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru" > 
+
+<head>
+
+<meta charset="utf-8">
+	<title>Это Мозгва детка!</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+
+	<script src="https://use.fontawesome.com/0f0d85202f.js"></script>
+
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head> 
+
+<script>
+function func(tel1,tel2,ch1,ch2) {
+	console.log(tel1, tel2, ch1, ch2);
+	if ((tel1.length>0)&&(tel2.length>0)){
+		if ((ch1 == true)||(ch2 == true)) {
+	    	$.get("https://userarea.sms-assistent.by/api/v1/send_sms/plain?user=Iksboks&password=a89xCfck&recipient="+$('input.required').val()+"&message=Команда "+$('input.team').val()+" "+$('input.quantity').val()+" человек зарегистрирована на Мозгву "+ $('input:checked').val()+" Ждем Вас!&sender=MOZGVA");
+	    	console.log(tel1, tel2, ch1, ch2);
+		}
+		else alert('Выберите пожалуйста дату !!!');
+	}
+	else alert('Введите пожалуйста телефон !!!');
+}
+
+// document.getElementById("group_1082364457_1").checked,document.getElementById("group_1082364457_2").checked,document.getElementById("group_1082364457_3").checked,document.getElementById("group_1082364457_4").checked,document.getElementById("group_1082364457_5").checked,document.getElementById("group_1082364457_6").checked
+// ch1,ch2,ch3,ch4,ch5,ch6
+</script>
+
+<body>
+<section class="send">
+<div class="conteiner">
+	<div class="row">
+		<div class="col-md-12 text-right">
+			<a href="index.html"><img src="images/close.png" alt=""></a>
+		</div>
+		<div class="col-md-12 text-center">
+			<h2>Регистрация в <br> Мозгве</h2>
+		</div>
+		<div class="col-md-12 text-center">
+			<p>Мы очень рады, что Вы к нам присоединяетесь, будет действительно круто!<br>Обещаем, что Ваши контактные данные будем использовать только для того, чтобы быть на связи перед<br> игрой, на которую Вы регистрируетесь!</p>
+			<p style="color: red;">Дорогие друзья! Пожалуйста, будьте внимательны:</p>
+		</div>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='/thx.html';}"></iframe>
+<form action="https://docs.google.com/forms/d/1w1NNRlYgISNEHOyYYv2yV5gYLcfrZMFLbogtTzzaLXA/formResponse" method="post" class="text-center" id="form1" 
+	onsubmit='func(document.getElementById("tel1").value, document.getElementById("tel2").value, document.getElementById("group_620528370_3").checked, document.getElementById("group_620528370_4").checked); submitted=true;' target="hidden_iframe" >
+		<div class=" col-md-6 text-right">
+			<input type="text" name="entry_751817998" class="captain" value="" placeholder="Имя капитана" />
+			<input type="text" name="entry.1622386422" class="team" value="" placeholder="Название команды" />				
+			<input type="text" name="entry.1926264121" class="quantity" value="" placeholder="Количество человек" />
+			<input type="text" name="entry.1250708141" form="form1" class="required" required=""   placeholder="Телефон" id="tel1"/>				
+		</div>
+		<div class=" col-md-6 text-left">
+			<input type="text" name="entry.191141737" class="" value="" placeholder="Имя боцмана" />				
+			<input type="text" name="entry.307300218" class="required" required=""  value="" placeholder="Телефон боцмана" id="tel2"/>	
+			<input type="text" name="entry.1094067227" class="" value="" placeholder="Кто пригласил Вас на Мозгву?" />
+		</div>
+		<div class="col-md-12 text-center check">
+			<!-- Выбор дня -->
+
+			<br>
+			<div class="ss-form-entry">
+			<label class="ss-q-item-label" for="entry_1082364457"><div class="ss-q-title">Какой день?
+			<label for="itemView.getDomIdToLabel()" aria-label="Обязательное поле"></label>
+			<span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+			<div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+
+			<br><br>
+
+			<p>Игра №1</p> 
+			<ul class="ss-choices" role="radiogroup" aria-label="Дата  ">
+				<li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input name="entry.620528370" value="12.07.2016" id="group_620528370_3" role="radio" class="ss-q-radio" aria-label="12.07.2016" required="" aria-required="true" type="radio"></span>
+				<span class="ss-choice-label">12.07.2016</span>
+				</label></li>
+			</ul>
+			<br><br>
+			<p>Игра №2</p> 
+			<ul class="ss-choices" role="radiogroup" aria-label="Дата  ">
+				<li class="ss-choice-item"><label><span class="ss-choice-item-control goog-inline-block"><input name="entry.620528370" value="14.07.2016" id="group_620528370_4" role="radio" class="ss-q-radio" aria-label="14.07.2016" required="" aria-required="true" type="radio"></span>
+				<span class="ss-choice-label">14.07.2016</span>
+				</label></li>	
+			</ul>
+			</div>
+			<button class="red_btn" onclick="ga('send', 'event', 'moscow', 'sent_form'); console.log('ГОТОВО');" id="mozgva_moskva">Готово</button>
+			<p>
+				Если вдруг Вам придет более оригинальное название, или изменится количество членов команды,<br> звоните или пишите, не стесняйтесь!
+			</p>
+
+		</div>
+
+</form>		
+</div>
+</section>	
+
+
+
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+@media \0screen{
+	.wrap
+	{
+		overflow: hidden;		
+	}
+
+	.wrap .date,
+	.wrap .logo,
+	.wrap .stat
+	{
+		float: left;
+	}
+	
+	.whatis{
+		background:  url("../images/a.png") no-repeat scroll 100% -100px #ffbb44;
+	}
+
+	.olympiada{
+		background:#4f53ff url("../images/olymp-bg.png") no-repeat scroll 100% 35px
+	}
+
+	#reg form{
+		padding-top: 150px;
+	}
+	#reg form input[type="text"]{
+		padding-top: 20px;
+		height: 40px;
+	}
+
+	.start .logo{
+		/*padding-left: 0;*/
+	}
+	.wrap .stat{
+		position: absolute;
+		right: 20px;
+		top: 50px;
+	}
+}
